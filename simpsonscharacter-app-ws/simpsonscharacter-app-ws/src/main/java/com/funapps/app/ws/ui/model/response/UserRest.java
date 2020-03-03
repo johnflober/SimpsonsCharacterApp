@@ -1,12 +1,20 @@
-package com.funapps.app.ws.ui.model.request;
+package com.funapps.app.ws.ui.model.response;
 
-//This is the object that the user will provide
-public class UserDetailsRequestModel {
+//This is the object returned to the user
+public class UserRest {
 
+    private String userId;
     private String firstName;
     private String lastName;
     private String email;
-    private String password;
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -30,13 +38,5 @@ public class UserDetailsRequestModel {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 }
